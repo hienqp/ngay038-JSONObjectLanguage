@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 while ((line = bufferedReader.readLine()) != null) {
                     stringBuilder.append(line);
                 }
+                bufferedReader.close();
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
